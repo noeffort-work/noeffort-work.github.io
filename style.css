@@ -1,10 +1,9 @@
-
 /*------------------------------------------------------------------
 
 version 1.2
 
 [Table of contents]
-1. Global CSS   
+1. Global CSS
     1.1 Columns CSS
     1.2 Global Header Logo/Menu CSS
 2. Home Page CSS
@@ -21,13 +20,11 @@ version 1.2
 11. Responsive CSS
 -------------------------------------------------------------------*/
 
-
 @import url("css/clear.css");
 @import url("css/font-awesome.min.css");
 @import url("css/sm-clean.css");
 @import url("css/swiper.min.css");
 @import url("css/common.css");
-
 
 
 /* ===================================
@@ -54,10 +51,10 @@ body a {
 }
 
 body a:hover {
-    color: #0000ff; 
+    color: #0000ff;
 }
 
-blockquote  {
+blockquote {
     font-family: 'PT+Serif', sans-serif;
     font-size: 24px;
     line-height: 40px;
@@ -83,7 +80,7 @@ blockquote:before {
     transform: translateY(-50%);
 }
 
-body p, 
+body p,
 body pre {
     margin-bottom: 15px;
 }
@@ -95,40 +92,40 @@ body pre {
     height: auto;
 }
 
-.doc-loader  {
+.doc-loader {
     position: fixed;
     left: 0px;
     top: 0px;
     width: 100%;
     height: 100%;
-    z-index: 99999;	
+    z-index: 99999;
     background-color: #fff;
 }
 
-.doc-loader img {    
+.doc-loader img {
     position: absolute;
-    top: 50%;    
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
 .content-1170 {
-    width: 1170px;  
+    width: 1170px;
     max-width: 95%;
 }
 
 .content-960 {
-    width: 960px;    
+    width: 960px;
     max-width: 95%;
 }
 
 .content-650 {
-    width: 650px;    
+    width: 650px;
     max-width: 95%;
 }
 
 .content-570 {
-    width: 570px;    
+    width: 570px;
     max-width: 95%;
 }
 
@@ -136,7 +133,7 @@ body pre {
     margin: 60px 0;
 }
 
-.section-wrapper  {
+.section-wrapper {
     padding-top: 75px;
 }
 
@@ -153,10 +150,10 @@ a.button {
 }
 
 a.button:hover {
-    opacity: 0.8; 
+    opacity: 0.8;
 }
 
-h1.page-title  {
+h1.page-title {
     font-size: 32px;
     line-height: 60px;
     font-weight: 400;
@@ -170,7 +167,7 @@ img.title-logo {
 
 .page .page-content {
     background-color: #fff;
-    padding: 75px;    
+    padding: 75px;
 }
 
 
@@ -178,39 +175,46 @@ img.title-logo {
     1.1 Columns CSS
 ====================================== */
 
-.one,  
-.one_half, 
-.one_third, 
+.one,
+.one_half,
+.one_third,
 .two_third,
-.three_fourth, 
+.three_fourth,
 .one_fourth {
     margin-right: 8%;
     float: left;
     position: relative;
     margin-bottom: 30px;
 }
+
 .last {
     margin-right: 0 !important;
     clear: right;
 }
+
 .one {
     float: none;
     display: block;
     clear: both;
     margin-right: 0;
 }
+
 .one_half {
     width: 46%;
 }
+
 .one_third {
     width: 28%;
 }
+
 .two_third {
     width: 64%;
 }
+
 .one_fourth {
     width: 19%;
 }
+
 .three_fourth {
     width: 73%;
 }
@@ -218,16 +222,16 @@ img.title-logo {
 .animate {
     opacity: 0;
     transition: .3s ease-in;
-    -ms-transform: translate(0px,70px); 
-    -webkit-transform: translate(0px,70px);
-    transform: translate(0px,70px);
+    -ms-transform: translate(0px, 70px);
+    -webkit-transform: translate(0px, 70px);
+    transform: translate(0px, 70px);
 }
 
 .animate.show-it {
     opacity: 1;
-    -ms-transform: translate(0px,0px); 
-    -webkit-transform: translate(0px,0px);
-    transform: translate(0px,0px);
+    -ms-transform: translate(0px, 0px);
+    -webkit-transform: translate(0px, 0px);
+    transform: translate(0px, 0px);
 }
 
 .wait-01s {
@@ -345,17 +349,16 @@ img.title-logo {
     top: 32px !important;
 }
 
-.menu-wrapper {    
+.menu-wrapper {
     max-width: 98%;
     width: 1170px;
     min-height: 77px;
 }
 
-@media (min-width:1600px) {
-    .menu-wrapper
-    {
-        width: 1450px;    
-    }           
+@media (min-width: 1600px) {
+    .menu-wrapper {
+        width: 1450px;
+    }
 
 }
 
@@ -365,7 +368,7 @@ img.title-logo {
     float: left;
     position: absolute;
     transform: translateY(-50%);
-    top: 50%;      
+    top: 50%;
 }
 
 .header-logo img {
@@ -401,33 +404,33 @@ img.title-logo {
     transition-delay: .1s;
 }
 
-#toggle .second-menu-line {        
-    transform: translate3d(10px,0,0);
+#toggle .second-menu-line {
+    transform: translate3d(10px, 0, 0);
 }
 
-#toggle:hover .second-menu-line {    
-    transform: translate3d(0,0,0) !important;
+#toggle:hover .second-menu-line {
+    transform: translate3d(0, 0, 0) !important;
 }
 
-#toggle.on .second-menu-line  { 
-    transform: translate3d(-10px,0,0);
+#toggle.on .second-menu-line {
+    transform: translate3d(-10px, 0, 0);
 }
 
-#toggle .third-menu-line {        
+#toggle .third-menu-line {
     margin-bottom: 5px;
 }
 
-.sm-clean .has-submenu  {
+.sm-clean .has-submenu {
     padding-right: 36px !important;
 }
 
-body .site-wrapper .sm-clean a  {
+body .site-wrapper .sm-clean a {
     cursor: pointer;
     color: #000;
     transition: color .3s ease;
 }
 
-.sm-clean a span.sub-arrow  {
+.sm-clean a span.sub-arrow {
     right: 10px;
     margin-top: 1px;
 }
@@ -436,9 +439,9 @@ body .site-wrapper .sm-clean a  {
     padding: 15px;
 }
 
-.sm-clean a, 
-.sm-clean a:hover, 
-.sm-clean a:focus, 
+.sm-clean a,
+.sm-clean a:hover,
+.sm-clean a:focus,
 .sm-clean a:active {
     font-size: 16px;
     font-weight: 500;
@@ -446,10 +449,10 @@ body .site-wrapper .sm-clean a  {
     padding: 15px;
 }
 
-.sm-clean ul a, 
-.sm-clean ul a:hover, 
-.sm-clean ul a:focus, 
-.sm-clean ul a:active {    
+.sm-clean ul a,
+.sm-clean ul a:hover,
+.sm-clean ul a:focus,
+.sm-clean ul a:active {
     font-size: 13px;
     line-height: 15px;
     padding: 10px;
@@ -458,16 +461,16 @@ body .site-wrapper .sm-clean a  {
 }
 
 .sm-clean {
-    background-color: transparent;        
+    background-color: transparent;
     padding: 15px 0;
 }
 
-body .sm-clean a:hover, 
+body .sm-clean a:hover,
 body .sm-clean li a.current {
     color: #939393;
 }
 
-.sm-clean li  {
+.sm-clean li {
     margin-right: 10px;
 }
 
@@ -479,18 +482,18 @@ body .sm-clean li a.current {
     margin-right: 0;
 }
 
-.sm-clean a.has-submenu  {
+.sm-clean a.has-submenu {
     padding-right: 24px;
 }
 
-.sub-menu a, 
+.sub-menu a,
 .children a {
-    padding-left: 15px !important;    
+    padding-left: 15px !important;
 }
 
-.sub-menu .sub-menu a, 
-.children .children a, 
-.sub-menu .sub-menu a:hover, 
+.sub-menu .sub-menu a,
+.children .children a,
+.sub-menu .sub-menu a:hover,
 .children .children a:hover {
     padding-top: 10px !important;
 }
@@ -501,6 +504,7 @@ body .sm-clean li a.current {
         margin-top: -4px;
         right: 23px;
     }
+
     .sm-clean ul {
         padding: 8px 0;
     }
@@ -511,7 +515,7 @@ body .sm-clean li a.current {
 
     #header-main-menu {
         display: block;
-        margin: 30% auto 0 auto; 
+        margin: 30% auto 0 auto;
     }
 
     .sm-clean ul {
@@ -519,7 +523,7 @@ body .sm-clean li a.current {
     }
 }
 
-.sm-clean a span.sub-arrow:before  {
+.sm-clean a span.sub-arrow:before {
     display: block;
     content: '\25CF';
     font-size: 8px;
@@ -532,17 +536,16 @@ body .sm-clean li a.current {
     display: block;
     content: '\25CF';
     font-size: 8px;
-    margin-top: 7px;        
+    margin-top: 7px;
     color: #000 !important;
 }
-
 
 
 /* ===================================
     2. Home Page CSS
 ====================================== */
 
-.grid  {    
+.grid {
     width: 100%;
     margin: 0 auto;
     overflow: hidden;
@@ -558,8 +561,8 @@ body .sm-clean li a.current {
     float: left;
     font-size: 0;
     line-height: 0;
-    width: 100%;    
-    overflow: hidden;            
+    width: 100%;
+    overflow: hidden;
 }
 
 .grid-item.p_one_third {
@@ -567,7 +570,7 @@ body .sm-clean li a.current {
 }
 
 .grid-item.p_two_third {
-    width: calc(100% / 3 * 2);   
+    width: calc(100% / 3 * 2);
 }
 
 .grid-item.p_one {
@@ -577,7 +580,7 @@ body .sm-clean li a.current {
 .grid-item img {
     width: 100% !important;
     height: auto;
-    display: block;    
+    display: block;
 }
 
 .grid-item .entry-holder {
@@ -626,7 +629,7 @@ body .sm-clean li a.current {
     letter-spacing: 2px;
 }
 
-.grid-item a.item-link:hover:after, 
+.grid-item a.item-link:hover:after,
 .grid-item a.item-link:hover .portfolio-text-holder {
     opacity: 1;
 }
@@ -652,7 +655,7 @@ body .sm-clean li a.current {
 }
 
 .more-posts-portfolio {
-    cursor: pointer;   
+    cursor: pointer;
 }
 
 #portfolio-grid {
@@ -674,18 +677,17 @@ body .sm-clean li a.current {
 }
 
 
-
 /* ===================================
     3. Single Portfolio
 ====================================== */
 
-.single-portfolio h1  {
+.single-portfolio h1 {
     padding-top: 0;
     font-size: 34px;
     line-height: 110%;
 }
 
-.portfolio-content:after  {
+.portfolio-content:after {
     content: "";
     display: block;
     clear: both;
@@ -700,15 +702,15 @@ body .sm-clean li a.current {
     margin-top: 70px;
 }
 
-.info-code-title  {
+.info-code-title {
     font-size: 10px;
     color: #000;
     letter-spacing: 2px;
     margin-bottom: 0;
-    line-height: 15px;    
+    line-height: 15px;
 }
 
-.info-code-content, 
+.info-code-content,
 .info-code-content a {
     color: #939393;
 }
@@ -720,17 +722,15 @@ body .sm-clean li a.current {
 }
 
 
-
-
 /* ===================================
     4. Service Page CSS
 ====================================== */
 
-.service-item  {
+.service-item {
     margin-bottom: 60px;
 }
 
-h3.service-title  {
+h3.service-title {
     font-size: 22px;
     line-height: 28px;
 }
@@ -825,11 +825,11 @@ h3.service-title  {
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
     width: 18px;
     height: 18px;
-    border: 2px solid black;    
+    border: 2px solid black;
     background-color: transparent;
 }
 
-.text-slider-wrapper  {
+.text-slider-wrapper {
     margin-bottom: 50px;
 }
 
@@ -840,7 +840,6 @@ h3.service-title  {
     line-height: 40px;
     color: #939393;
 }
-
 
 
 /* ===================================
@@ -868,13 +867,12 @@ ul.archive-list li span {
 }
 
 
-
 /* ===================================
     6. Team Page CSS
 ====================================== */
 
 .team-holder .member {
-    position: relative;    
+    position: relative;
     margin-right: 0;
     margin-bottom: 0;
 }
@@ -882,7 +880,7 @@ ul.archive-list li span {
 .team-holder .member img {
     display: block;
     width: 100%;
-    height: auto;    
+    height: auto;
 }
 
 .team-holder .member.one_half {
@@ -894,7 +892,7 @@ ul.archive-list li span {
 }
 
 .team-holder .member.one_fourth {
-    width: calc(100% / 4);   
+    width: calc(100% / 4);
 }
 
 .team-holder .member-info {
@@ -923,7 +921,7 @@ ul.archive-list li span {
 }
 
 .team-holder .member-name a {
-    color: #fff;    
+    color: #fff;
 }
 
 .team-holder .member-social-holder {
@@ -947,21 +945,20 @@ ul.archive-list li span {
 }
 
 
-
 /* ===================================
     6.1 Skills CSS
 ====================================== */
 
-.progress_bar  {
+.progress_bar {
     margin-bottom: 13px;
 }
 
-.progress_bar_field_holder  {
+.progress_bar_field_holder {
     height: 10px;
-    display: inline-block; 
+    display: inline-block;
     position: relative;
     width: 300px;
-    vertical-align: middle;    
+    vertical-align: middle;
     border-radius: 30px;
     overflow: hidden;
     background-color: #eeeeee;
@@ -973,7 +970,7 @@ ul.archive-list li span {
     margin-right: 23px;
 }
 
-.progress_bar_field_perecent  {
+.progress_bar_field_perecent {
     height: 10px;
     position: absolute;
     top: 0;
@@ -982,12 +979,11 @@ ul.archive-list li span {
 }
 
 
-
 /* ===================================
     7. Blog Page CSS
 ====================================== */
 
-.blog .site-content  {    
+.blog .site-content {
     background-color: #fff;
 }
 
@@ -997,11 +993,11 @@ ul.archive-list li span {
     margin-top: 10%;
 }
 
-.blog-item-holder {        
+.blog-item-holder {
     width: 60%;
 }
 
-.blog-item-holder .entry-holder  {
+.blog-item-holder .entry-holder {
     display: flex;
     width: 100%;
     position: relative;
@@ -1009,7 +1005,7 @@ ul.archive-list li span {
     align-items: center;
 }
 
-.blog-item-holder .entry-holder:after  {
+.blog-item-holder .entry-holder:after {
     content: "";
     width: 90%;
     height: 1px;
@@ -1019,7 +1015,7 @@ ul.archive-list li span {
     left: 0;
 }
 
-.blog-item-holder .post-thumbnail  {
+.blog-item-holder .post-thumbnail {
     position: absolute;
     width: 66%;
     right: -68%;
@@ -1030,13 +1026,13 @@ ul.archive-list li span {
     visibility: hidden;
 }
 
-.blog-item-holder .entry-holder.active-post + .post-thumbnail  {
+.blog-item-holder .entry-holder.active-post + .post-thumbnail {
     opacity: 1;
     transform: translateY(-120px);
     visibility: visible;
 }
 
-.blog-item-holder .entry-info  {
+.blog-item-holder .entry-info {
     font-size: 10px;
     margin-right: 20px;
     min-width: 150px;
@@ -1083,7 +1079,7 @@ ul.archive-list li span {
     color: #939393;
 }
 
-.single .post-info-wrapper .text-holder  {
+.single .post-info-wrapper .text-holder {
     font-size: 10px;
     color: #000;
     letter-spacing: 2px;
@@ -1112,17 +1108,17 @@ ul.archive-list li span {
     display: none;
 }
 
-.single .entry-info ul  {
+.single .entry-info ul {
     padding: 0;
     margin: 0;
     list-style: none;
 }
 
-.single .entry-info ul li  {
+.single .entry-info ul li {
     display: inline-block;
 }
 
-.single .entry-info .cat-links li:after  {
+.single .entry-info .cat-links li:after {
     content: ",";
     padding-right: 5px;
 }
@@ -1131,7 +1127,7 @@ ul.archive-list li span {
     display: none;
 }
 
-.single-post-featured-image  {
+.single-post-featured-image {
     text-align: center;
     padding-bottom: 40px;
     width: 1300px;
@@ -1140,7 +1136,7 @@ ul.archive-list li span {
     max-width: 95%;
 }
 
-.single .entry-content  {
+.single .entry-content {
     font-size: 15px;
     line-height: 30px;
     color: #000;
@@ -1153,7 +1149,7 @@ ul.archive-list li span {
     display: inline-block;
 }
 
-.tags-holder a  {
+.tags-holder a {
     color: #0000ff;
     border: 1px solid #0000ff;
     text-decoration: none;
@@ -1176,7 +1172,7 @@ ul.archive-list li span {
 }
 
 .tags-holder a:hover {
-    background-color: #0000ff;    
+    background-color: #0000ff;
     color: #fff !important;
 }
 
@@ -1192,7 +1188,7 @@ ul.archive-list li span {
 }
 
 .single .nav-links a:hover {
-    color: #000 ;
+    color: #000;
 }
 
 .single .nav-previous {
@@ -1211,7 +1207,7 @@ ul.archive-list li span {
     position: relative;
 }
 
-.nav-previous a, 
+.nav-previous a,
 .nav-next a {
     font-weight: 700;
     font-size: 22px;
@@ -1236,7 +1232,7 @@ ul.archive-list li span {
     transform: translate(-10px, 0);
 }
 
-.single .nav-next .arrow-holder  {
+.single .nav-next .arrow-holder {
     display: block;
     font-size: 50px;
     transition: transform .3s ease;
@@ -1248,7 +1244,6 @@ ul.archive-list li span {
 .single .nav-next a:hover + .arrow-holder {
     transform: translate(10px, 0);
 }
-
 
 
 /* ===================================
@@ -1264,8 +1259,8 @@ ul.archive-list li span {
     margin: 0 auto;
 }
 
-.contact-form input[type=text], 
-.contact-form input[type=email], 
+.contact-form input[type=text],
+.contact-form input[type=email],
 .contact-form textarea {
     font-family: 'Work Sans', sans-serif;
     color: #000;
@@ -1284,7 +1279,7 @@ ul.archive-list li span {
     height: 150px;
 }
 
-.contact-form input[type=submit] {	
+.contact-form input[type=submit] {
     font-family: 'Poppins', sans-serif;
     border: 2px solid #000;
     display: block;
@@ -1301,13 +1296,14 @@ ul.archive-list li span {
     width: 100%;
     font-weight: 700;
 }
+
 .contact-form input[type=submit]:hover {
     background-color: #000000;
     color: #fff;
 }
 
-.contact-form input[type=text]::-webkit-input-placeholder, 
-.contact-form input[type=email]::-webkit-input-placeholder, 
+.contact-form input[type=text]::-webkit-input-placeholder,
+.contact-form input[type=email]::-webkit-input-placeholder,
 .contact-form textarea::-webkit-input-placeholder {
     font-family: 'Work Sans', sans-serif;
     color: #000;
@@ -1315,8 +1311,9 @@ ul.archive-list li span {
     font-size: 15px;
     line-height: 30px;
 }
-.contact-form input[type=text]::-moz-placeholder, 
-.contact-form input[type=email]::-moz-placeholder, 
+
+.contact-form input[type=text]::-moz-placeholder,
+.contact-form input[type=email]::-moz-placeholder,
 .contact-form textarea::-moz-placeholder {
     font-family: 'Work Sans', sans-serif;
     color: #000;
@@ -1325,8 +1322,9 @@ ul.archive-list li span {
     line-height: 30px;
     opacity: 1;
 }
-.contact-form input[type=text]:-ms-input-placeholder, 
-.contact-form input[type=email]:-ms-input-placeholder, 
+
+.contact-form input[type=text]:-ms-input-placeholder,
+.contact-form input[type=email]:-ms-input-placeholder,
 .contact-form textarea:-ms-input-placeholder {
     font-family: 'Work Sans', sans-serif;
     color: #000;
@@ -1334,8 +1332,9 @@ ul.archive-list li span {
     font-size: 15px;
     line-height: 30px;
 }
-.contact-form input[type=text]:-moz-placeholder, 
-.contact-form input[type=email]:-moz-placeholder, 
+
+.contact-form input[type=text]:-moz-placeholder,
+.contact-form input[type=email]:-moz-placeholder,
 .contact-form textarea:-moz-placeholder {
     font-family: 'Work Sans', sans-serif;
     color: #000;
@@ -1346,12 +1345,11 @@ ul.archive-list li span {
 }
 
 
-
 /* ===================================
     10. Footer CSS
 ====================================== */
 
-footer ul  {
+footer ul {
     list-style: none;
     padding-left: 0;
     margin-left: 0;
@@ -1370,7 +1368,7 @@ footer ul  {
 }
 
 .footer-content {
-    padding-top: 35px;    
+    padding-top: 35px;
 }
 
 .social-holder {
@@ -1378,7 +1376,7 @@ footer ul  {
     margin-top: 5px;
 }
 
-.social-holder a  {
+.social-holder a {
     font-size: 17px;
     margin-right: 25px;
 }
@@ -1387,7 +1385,7 @@ footer ul  {
     color: #939393;
 }
 
-.social-holder a:last-of-type  {
+.social-holder a:last-of-type {
     margin: 0;
 }
 
@@ -1404,8 +1402,6 @@ footer ul  {
 }
 
 
-
-
 /* ===================================
     11. Responsive CSS
 ====================================== */
@@ -1413,7 +1409,7 @@ footer ul  {
 @media screen and (max-width: 1360px) {
 
     .single .nav-links .content-1170 {
-        max-width: 80%;   
+        max-width: 80%;
     }
 
     .team-holder .member-info {
@@ -1431,56 +1427,56 @@ footer ul  {
 }
 
 
-@media screen and (max-width: 1024px) {   
+@media screen and (max-width: 1024px) {
 
     .sm-clean li {
         margin-right: 8px;
     }
 
-    .sm-clean a, 
-    .sm-clean a:hover, 
-    .sm-clean a:focus, 
-    .sm-clean a:active, 
+    .sm-clean a,
+    .sm-clean a:hover,
+    .sm-clean a:focus,
+    .sm-clean a:active,
     .sm-clean a.highlighted {
         padding: 15px 8px;
     }
 
-    .blog-holder, 
+    .blog-holder,
     .footer-content {
         width: 100%;
-    }    
+    }
 
 }
 
-@media screen and (max-width: 1020px) {   
+@media screen and (max-width: 1020px) {
 
-    .wait-01s, 
-    .wait-02s, 
-    .wait-03s, 
-    .wait-04s, 
-    .wait-05s, 
-    .wait-06s, 
-    .wait-07s, 
-    .wait-08s, 
-    .wait-09s, 
-    .wait-10s, 
-    .wait-11s, 
-    .wait-12s, 
-    .wait-13s, 
-    .wait-14s, 
+    .wait-01s,
+    .wait-02s,
+    .wait-03s,
+    .wait-04s,
+    .wait-05s,
+    .wait-06s,
+    .wait-07s,
+    .wait-08s,
+    .wait-09s,
+    .wait-10s,
+    .wait-11s,
+    .wait-12s,
+    .wait-13s,
+    .wait-14s,
     .wait-15s {
         -webkit-transition-delay: 0s;
         transition-delay: 0s;
     }
 
-    .single h1.entry-title {    
+    .single h1.entry-title {
         font-size: 38px;
         line-height: 44px;
-    }       
+    }
 
     .single-post-header-content {
         margin-bottom: 0;
-    } 
+    }
 
     .single .post-info-wrapper {
         float: none;
@@ -1492,12 +1488,12 @@ footer ul  {
     .single .entry-info > div {
         display: inline-block;
         margin: 0 20px;
-    }   
+    }
 
     .single .entry-content {
         width: 100%;
         float: none;
-    }     
+    }
 
     blockquote {
         font-size: 17px;
@@ -1518,7 +1514,7 @@ footer ul  {
 
     .single .arrow-holder {
         display: none !important;
-    }    
+    }
 
     .blog-item-holder {
         width: 100%;
@@ -1551,14 +1547,14 @@ footer ul  {
         display: block;
         text-align: center;
         padding: 25px 0;
-    }  
+    }
 
     .team-holder .member.one_third {
         width: 50%;
         float: left;
     }
 
-    .team-holder .member.one_half, 
+    .team-holder .member.one_half,
     .team-holder .member.one_fourth {
         width: 50%;
         float: left;
@@ -1613,7 +1609,7 @@ footer ul  {
 
     .main-menu ul {
         width: 12em;
-    }        
+    }
 
     .toggle-holder {
         display: block;
@@ -1622,7 +1618,7 @@ footer ul  {
     .sm-clean li {
         margin: 0 auto !important;
         border: 0;
-    }  
+    }
 
     .sm-clean .has-submenu {
         padding-right: 10px !important;
@@ -1640,15 +1636,15 @@ footer ul  {
         overflow: auto;
         max-width: 100%;
         z-index: 99;
-    }     
+    }
 
     .menu-holder.show {
         right: 0;
     }
 
-    .sm-clean ul ul a, 
-    .sm-clean ul ul a:hover, 
-    .sm-clean ul ul a:focus, 
+    .sm-clean ul ul a,
+    .sm-clean ul ul a:hover,
+    .sm-clean ul ul a:focus,
     .sm-clean ul ul a:active {
         border: none;
     }
@@ -1657,14 +1653,14 @@ footer ul  {
         background: transparent;
     }
 
-    .sm-clean a, 
-    .sm-clean a:hover, 
-    .sm-clean a:focus, 
-    .sm-clean a:active, 
+    .sm-clean a,
+    .sm-clean a:hover,
+    .sm-clean a:focus,
+    .sm-clean a:active,
     .sm-clean a.highlighted {
-        padding: 10px;        
+        padding: 10px;
         margin-bottom: 5px;
-    }  
+    }
 
     .sm-clean a span.sub-arrow {
         right: -10px;
@@ -1693,7 +1689,7 @@ footer ul  {
         -moz-osx-font-smoothing: grayscale;
     }
 
-    .sm-clean a, 
+    .sm-clean a,
     .sm-clean a:hover,
     .sm-clean a:focus,
     .sm-clean a:active {
@@ -1704,17 +1700,16 @@ footer ul  {
 }
 
 
-
-@media screen and (max-width: 767px) {    
+@media screen and (max-width: 767px) {
 
     .section-wrapper,
     .single article {
         padding: 35px 0;
     }
-	
-	.portfolio-item-wrapper {
-		margin-top: 35px;
-	}
+
+    .portfolio-item-wrapper {
+        margin-top: 35px;
+    }
 
     .one_half,
     .one_third,
@@ -1733,11 +1728,11 @@ footer ul  {
         margin-right: auto;
         text-align: center;
         float: none;
-    }    
+    }
 
     .site-content {
         overflow: hidden;
-    }    
+    }
 
     blockquote {
         margin-top: 115px;
@@ -1751,17 +1746,17 @@ footer ul  {
         padding-bottom: 10px;
     }
 
-    .grid-item, 
+    .grid-item,
     .grid-sizer {
         width: 100% !important;
-    }      
+    }
 
     .team-holder .member-info {
         min-height: 0;
     }
 
-    .team-holder .member.one_third, 
-    .team-holder .member.one_half, 
+    .team-holder .member.one_third,
+    .team-holder .member.one_half,
     .team-holder .member.one_fourth {
         width: 100%;
         float: none;
@@ -1775,13 +1770,13 @@ footer ul  {
     .info-code-holder {
         margin-top: 30px;
         margin-bottom: 42px;
-    }    
+    }
 
     .medium-text {
         font-size: 20px;
         line-height: 33px;
     }
-    
+
     .contact-form {
         margin-top: 75px;
     }
@@ -1816,13 +1811,13 @@ footer ul  {
         float: none;
     }
 
-    .single .nav-previous {    
+    .single .nav-previous {
         padding-bottom: 40px;
-    }        
+    }
 
 }
 
-@media screen and (max-width: 650px) {  
+@media screen and (max-width: 650px) {
 
     h1.page-title br {
         display: none;
@@ -1835,7 +1830,7 @@ footer ul  {
         padding-top: 0;
     }
 
-    .blog-item-holder .entry-date.published, 
+    .blog-item-holder .entry-date.published,
     .blog-item-holder .cat-links,
     .single .entry-info div,
     .single .entry-info .cat-links ul {
@@ -1845,5 +1840,5 @@ footer ul  {
     .blog-item-holder .entry-date.published:after,
     .single .entry-info div:after {
         display: none;
-    }    
+    }
 }

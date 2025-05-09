@@ -1,5 +1,5 @@
 (function ($) {
-    "use strict";    
+    "use strict";
 
     //Blog show feature image
     showFirstBlogPostFeatureImge();
@@ -47,7 +47,6 @@
     });
 
 
-
 //------------------------------------------------------------------------
 //Helper Methods -->
 //------------------------------------------------------------------------
@@ -69,12 +68,10 @@
     function multiClickFunctionStop(e) {
         $('#toggle').off("click");
         $('#toggle, .toggle-holder, body').toggleClass("on");
-        if ($('#toggle').hasClass("on"))
-        {
+        if ($('#toggle').hasClass("on")) {
             $('.menu-holder').addClass('show');
             $('#toggle').on("click", multiClickFunctionStop);
-        } else
-        {
+        } else {
             $('.menu-holder').removeClass('show');
             $('#toggle').on("click", multiClickFunctionStop);
         }
@@ -115,8 +112,7 @@
             var items_value = window[id + '_items'];
             var gap = window[id + '_gap'];
             auto_value = (auto_value === 'true') ? true : false;
-            if (auto_value === true)
-            {
+            if (auto_value === true) {
                 var mySwiper = new Swiper('#' + id, {
                     autoplay: {
                         delay: speed_value
@@ -180,8 +176,7 @@
             var id = $(this).attr('id');
             var auto_value = window[id + '_auto'];
             var speed_value = window[id + '_speed'];
-            if (auto_value === true)
-            {
+            if (auto_value === true) {
                 var mySwiper = new Swiper('#' + id, {
                     autoplay: {
                         delay: speed_value
@@ -225,7 +220,7 @@
             var obj = $mainMenu.data('smartmenus');
             if (obj.isCollapsible()) {
                 var $item = $(this).parent(),
-                        $sub = $item.parent().dataSM('sub');
+                    $sub = $item.parent().dataSM('sub');
                 $sub.dataSM('arrowClicked', true);
             }
         }).bind({
@@ -281,8 +276,7 @@
                 success: function (response) {
                     if (response) {
                         var responseObj = $.parseJSON(response);
-                        if (responseObj.ResponseData)
-                        {
+                        if (responseObj.ResponseData) {
                             alert(responseObj.ResponseData);
                         }
                     }
@@ -290,8 +284,7 @@
                 error: function (xhr, ajaxOptions, thrownError) {
                     //xhr.status : 404, 303, 501...
                     var error = null;
-                    switch (xhr.status)
-                    {
+                    switch (xhr.status) {
                         case "301":
                             error = "Redirection Error!";
                             break;
@@ -315,8 +308,7 @@
                     }
                 }
             });
-        } else
-        {
+        } else {
             alert('Your email is not in valid format');
         }
     }
